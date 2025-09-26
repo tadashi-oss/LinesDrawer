@@ -1,18 +1,26 @@
+<!-- HTML document for a canvas-based line drawing application -->
 <!DOCTYPE html>
 <html lang="en">
+<!-- Head section with metadata -->
 <head>
     <meta charset="UTF-8">
     <title>Dibujo con canvas</title>
+<!-- Body section with UI elements -->
 </head>
+<!-- Main title of the application -->
 <body>
-    <h1>Dibujo de Canvas</h1>
-    <p>Cuántas líneas deseas:
+<!-- Input section for specifying number of lines -->
+    <h1>LineDrawer</h1>
+    <p>How many lines do you want:
         <input type="text" id="texto" />
-        <input type="button" value="Presiona" id="boton" />
+<!-- Canvas element where the drawing will be displayed -->
+        <input type="button" value="Press" id="boton" />
+<!-- Message displayed after the drawing is completed -->
     </p>
+<!-- Link to the JavaScript file handling the drawing logic -->
 
     <canvas id="dibujo" width="300" height="300"></canvas>
-    <p>Así queda tu dibujo</p>
+    <p id="feedMessage">Here you have your masterpiece</p>
     <script src="dibujo.js"></script>
 </body>
 </html>
